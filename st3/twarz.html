@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>Usługi kosmetyczne</title>
+        <link rel="stylesheet" href="styl.css"/>
+		
+	</head>
+<body>
+
+
+<div id="prawy1">
+	<h1>Salon Kosmetyczny</h1>
+	</div>
+	
+	<div id="lewy1">
+	
+	<h2>W ofercie</h2>
+	
+	<ul>
+		
+		<li><a href="twarz.html">"Zabieg na twarz></a>
+		<ol>
+			<li>Piling</li>
+			<li>Maska</li>
+			<li>Regulacja brwi</li>
+		</ol>
+		</li>
+		<li>Masaż</li>
+		<li>Diety oczyszczające</li>
+		
+	<a href="index.html">Do strony głównej</a>
+
+	
+	</ul>
+	
+	
+	</div>
+
+	
+	
+	<div id="prawy2">
+	<h2>Sprawdź cenę swojej wizyty</h2>
+	
+	
+	<input type="checkbox" id="box1" value="45"/>Piling<br>
+	<input type="checkbox" id="box2" value="30"/>Maska<br>
+	<input type="checkbox" id="box3" value="20"/>Masaż twarzy<br>
+	<input type="checkbox" id="box4" value="5"/>Regulacja brwi<br>
+	<input type="button" value="Sprawdź cenę" onclick="przycisk()"/>
+	
+	</div>
+
+	
+
+	<script>
+	
+	function przycisk()
+	{
+	
+	var cena = document.getElementById("box1");
+	var cena1 =document.getElementById("box2");
+	var cena2 =document.getElementById("box3");
+	var cena3 =document.getElementById("box4");
+	
+	if(cena.checked==true)
+	{
+	var Piling=45;
+	
+
+	}else
+	{
+	Piling=0;
+	}
+	if(cena1.checked==true)
+	{
+	
+		var maska=30;	
+		
+	}else
+	{
+	maska=0;
+	}
+	
+		if(cena2.checked==true)
+	{
+	
+		var masaz=20;
+
+	}else
+	{
+	
+	masaz=0}
+	
+		if(cena3.checked==true)
+	{
+	
+		var brwi=5;
+		
+
+	} else
+	{
+	brwi=0;
+	}
+
+	
+	var wynik=0;
+	wynik= maska+masaz+brwi+Piling;
+	alert(wynik);
+	
+
+
+	
+	
+	
+	}
+	
+	</script>
+	
+	<div id="lewy2">
+	<img src="obraz1.jpg" alt="Kosmetyczka">
+	
+	</div>
+	
+	<div id="stopka">
+	<p>Autor:Mateusz Matwiejczuk</p>
+	</div>
+
+
+
+</body>
+</html>

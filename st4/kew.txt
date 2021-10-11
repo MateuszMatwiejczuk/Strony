@@ -1,0 +1,5 @@
+SELECT id,nazwa,wystepowanie FROM ryby WHERE styl_zycia=2;
+SELECT akwen,wojewodztwo FROM lowisko WHERE rodzaj=2 OR 
+rodzaj=3;
+SELECT nazwa FROM ryby,okres_ochronny WHERE ryby.id=okres_ochronny.Ryby_id AND od_miesiaca=0;
+CREATE TABLE `wedkowanie`.`wedkarze` ( `id` INT NOT NULL AUTO_INCREMENT , `imie` TEXT NOT NULL , `nazwisko` TEXT NOT NULL , `punkty` INT NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        
+        <title>Stacja Paliw</title>
+        <link rel="stylesheet" href="styl3.css"/>
+
+		
+	</head>
+<body>
+
+	<div id="baner1">
+	<h1>Stacja Paliw</h1>
+	
+	</div>
+	
+	<div id="baner2">
+	<a href="stacja.html"><img src="home.png"><a/>
+	<a href="obliczenia.html"><img src="znak.png"><a/>
+	
+	</div>
+	
+	<div id="glowny">
+	
+	<h3>Oblicz koszt paliwa</h3>
+	
+	Rodzaj paliwa(1-benzywa,2-olej napędowy) <br>
+	<input type="number" name="paliwo" id="paliwo" min="0"><br>
+	</input>
+	Ile litrów<br>
+	<input type="number" name="litr" id="litr" min="0"><br>
+	</input>
+	<button onclick="oblicz()">OBLICZ</button>
+	
+	
+	<div id="obliczanie">
+	
+	
+	
+	
+	
+	</div>
+	
+	
+	</div>
+	
+	
+	
+	<script>
+	
+	function oblicz()
+	{
+	
+	var paliwo= parseInt(document.getElementById("paliwo").value);
+	var litr = parseInt(document.getElementById("litr").value);
+	
+	
+	
+	if (paliwo==1)
+	{
+	var cena=4*litr;
+	document.getElementById("obliczanie").innerHTML="koszt paliwa: "+cena; 
+	
+	}
+	
+	else if(paliwo==2)
+	{
+	var cena=3.5*litr;
+	document.getElementById("obliczanie").innerHTML="koszt paliwa: "+cena; 
+	
+	
+	}
+	
+	else
+	{
+	
+	var cena=0;
+	document.getElementById("obliczanie").innerHTML="koszt paliwa: "+cena; 
+	
+	}
+	
+	
+	
+	
+	}
+	</script>
+	
+	<div id="lewy">
+	<a href="kew.txt">Pobierz kwerendy</a>
+	</div>
+	
+	<div id="prawy">
+	<img src="samochod.png" alt="samochód">
+	</div>
+	
+	<div id="stopka">
+	<a>Stronę opracował: Mateusz Matwiejczuk</a>
+	</div>
+	
+
+
+</body>
+</html>

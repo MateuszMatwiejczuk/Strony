@@ -1,0 +1,43 @@
+*
+{
+    font-family: Georgia;
+
+}
+#baner1, #baner2
+{
+    background-color: #3CB371;
+    color: white;
+    height: 100px;
+    width: 40%;
+    float: left;
+}
+#baner3
+{
+    background-color: #3CB371;
+    height: 100px;
+    width: 20%;
+    float: left;    
+}
+#glowny
+{
+    background-color: #FFDAB9;
+    height: 90px;
+    width: 170PX;
+    margin: 5px;
+    border: 1px solid #3CB371;
+    float: left;
+}
+#mefjuu
+{
+    background-color: #3CB371;
+    color:white;
+    clear: both;
+}
+form
+{
+    padding: 30px;
+}
+h6
+{
+	text-align:right;
+}

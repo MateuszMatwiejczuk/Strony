@@ -1,0 +1,2 @@
+SELECT dataZadania,miesiac,wpis FROM zadania WHERE miesiac="sierpien";
+UPDATE `zadania` SET `datazadania`="2020-08-01" WHERE id=2;
